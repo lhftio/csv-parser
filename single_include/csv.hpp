@@ -6112,7 +6112,7 @@ namespace csv {
             StreamParser(TStream& source,
                 const CSVFormat& format,
                 const ColNamesPtr& col_names = nullptr
-            ) : _source(std::move(source)), IBasicCSVParser(format, col_names) {};
+            ) : IBasicCSVParser(format, col_names), _source(std::move(source)) {};
 
             StreamParser(
                 TStream& source,
