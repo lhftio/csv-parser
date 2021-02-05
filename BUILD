@@ -6,7 +6,6 @@ cc_library(
     hdrs = [
         "single_include/csv.hpp",
     ],
-    copts = ["-Wno-reorder"],
     include_prefix = "csvparser",
     strip_include_prefix =
         "single_include",
